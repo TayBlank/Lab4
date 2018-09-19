@@ -1,0 +1,12 @@
+Input Values:
+Blue
+Orange
+Red
+Yellow
+Purple
+Expected result:
+Blue
+Orange 
+Purple
+Red
+Yellow
