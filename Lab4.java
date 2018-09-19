@@ -58,11 +58,11 @@ public class Lab4 {
      */
     private static String[] sort(String[] a)
     {
-        if(a.length==1){return a;}
+        if(a.length<=1){return a;}
         else
         {   String[] ans=new String[a.length];
             for(int i=0;i<a.length-1;i++)
-            {   while(i>=0&&a[i+1].compareTo(a[i])<0)
+            {   while(i>=0&&a[i+1].compareTo(a[i])>0)
                 {   String temp=a[i];
                     a[i]=a[i+1];
                     a[i+1]=temp;
