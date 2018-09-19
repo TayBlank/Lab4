@@ -1,12 +1,4 @@
 Input Values:
-Blue
-Orange
-Red
-Yellow
-Purple
+5 3 7 9 0
 Expected result:
-Blue
-Orange 
-Purple
-Red
-Yellow
+0 3 5 7 9

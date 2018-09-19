@@ -2,7 +2,7 @@ package Lab4;
 
 import java.util.Scanner;
 /**
- * Class for Lab 4 to sort words alphabetically
+ * Class for Lab 4 to sort numbers
  * 
  * @author tayblank
  * @version Created 9/19/19, Edited 9/19/19
@@ -32,16 +32,13 @@ public class Lab4 {
     {
         if(a.length==1){return a;}
         else
-        {   //a.length should be at least two
-            for(int k=0;k<a.length;k++)//not very efficient
-            {
-                for(int i=0;i<a.length-1;i++)
-                {
-                    if(a[i+1].compareTo(a[i])<0)
-                    {   String temp=a[i];
-                        a[i]=a[i+1];
-                        a[i+1]=temp;
-                    }
+        {   String[] ans=new String[a.length];
+            for(int i=0;i<a.length-1;i++)
+            {   while(i>=0&&a[i+1].compareTo(a[i])<0)
+                {   String temp=a[i];
+                    a[i]=a[i+1];
+                    a[i+1]=temp;
+                    i--;
                 }
             }
         }
